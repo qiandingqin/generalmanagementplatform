@@ -1,0 +1,100 @@
+// 蓝色
+@color-Blue: #1890FF;
+
+// 红色 Red（主要用于：提示的颜色）
+@color-Red: #FF4D4F;
+.color-Red {
+  color: @color-Red;
+}
+
+// 绿色 Green
+@color-Green: #52c41a;
+
+// 黄色 Yellow
+@color-Yellow: #faad14;
+
+// 黑色 (主要用于头部和底部背景色)
+@color-Black: #0B2833;
+
+@color-Black-100: rgba(0, 0, 0, 1); // 文字颜色
+
+// 主要用于：字体颜色、边框
+@color-Black-85: rgba(0, 0, 0, 0.85); // 文字颜色
+
+@color-Black-75: rgba(0, 0, 0, 0.75); // 文字颜色
+
+@color-Black-65: rgba(0, 0, 0, 0.65); // 文字颜色
+
+@color-Black-50: rgba(0, 0, 0, 0.50);
+
+@color-Black-45: rgba(0, 0, 0, 0.45);
+
+@color-Black-25: rgba(0, 0, 0, 0.25);
+
+@color-Black-15: rgba(0, 0, 0, 0.15);
+
+// 不可用按钮背景色
+@color-Blue-Dissbles: #8AC7FF;
+
+// 班级管理，多选显示 蓝色边框颜色
+@color-Blue-border: #91D5FF;
+@color-Blue-bg: #E6F7FF;
+
+
+// 自定义常用样式
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-Blue {
+  color: @color-Blue;
+}
+
+// ---------------------------- 设置自定义样式 ---------------------------- //
+// 自定义分页样式
+.pagination-view {
+  text-align: right;
+  padding: .25rem 0;
+}
+
+// 修改表格默认样式
+.table-style {
+  :deep(.ant-table-content) {
+    // 筛选 靠左
+    .anticon-filter {
+      right: initial;
+    }
+    
+    // 去掉默认 空数据 显示
+    .ant-table-placeholder {
+      display: none;
+    }
+  }
+}
+
+// 滚动条样式
+.overflow-y {
+  overflow-y: auto;
+}
+.overflow-y::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 2px;  /* 会占据10px的宽度，如果设置为0，则看不到滚动条样式，但不影响滚动效果 */
+	height: 2px;
+}
+.overflow-y::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.overflow-y::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.15);
+	padding: 4px;
+}
+
+.ant-modal {
+	padding-bottom: 500px;
+}
